@@ -10,10 +10,9 @@ body {
     width: auto;
 }
 
-
 .container {
     height: 100vh;
-    background-color:rgb(107, 68, 10);
+    background-color:rgb(98, 0, 255);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -23,7 +22,7 @@ body {
     height: 90vh;
     width: 90vw;
     padding: 1rem;
-    background-color:antiquewhite;
+    background-color:white;
     border-radius: 1rem;
     display: flex;
     flex-direction: column;
@@ -32,26 +31,46 @@ body {
 }
 
 .wrapper h1 {
-    color: rgb(107, 68, 10);
+    color:white;
     text-transform: uppercase;
 }
 
 hr {
-    border:rgb(107, 68, 10) 2px solid;
+    border:rgb(98, 0, 255) 2px solid;
     width: 75%;
 }
 
 .heading-wrapper {
-    background-color: aqua;
     height: 5%;
     width: 90%;
+    margin-block: 1rem;
+}
+
+.heading {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    
+}
+
+.heading h2 {
+    width: 50%;
+    height: 100%;
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: rgb(98, 0, 255);
+    border-radius: 50px;
+    line-height: 40px;
 }
 
 .wrapper-content {
     background-color: aqua;
     height: 60%;
     width: 90%;
-    margin-block: 2rem;
     display: flex;
     justify-content: center;
     gap: 1rem;
@@ -63,12 +82,13 @@ hr {
     width: 90%;
     display: flex;
     justify-content: center;
-    align-items: center;
     gap: 0.5rem;
 }
 
 .columns-columns {
     background-color: rgb(72, 255, 0);
-    height: 95%;
+    height: 100%;
     width: 100%;
 }
+
+
