@@ -21,25 +21,110 @@
   </head>
 
   <body>
-    <div class="container">
+    <div ng-app="" ng-init="all='false'" class="container">
       <div class="wrapper">
         <h1>Monthly Budget</h1>
         <hr>
-        <div class="heading-wrapper">
-            <div class="heading">
-                <h2>Expense</h2>
-                <h2>Income</h2>
+        <div class="total_exp_inc_wrapper">
+          <div class="total_wrapper">
+            <h2 class="total_heading">Profit in %</h2>
+            <input class="total_value_display" type="number" value="0" ng-readonly="all">
+
+          </div>
+          <div class="total_wrapper">
+            <h2 class="total_heading">Profit in ₹</h2>
+            <input class="total_value_display" type="number" value="0" ng-readonly="all">
           </div>
         </div>
+
         <div class="wrapper-content">
+          
+          <div class="two_by_two">
+            <h2 class="heading">Expense</h2>
             <div class="wrapper-columns">
-                <div class="columns-columns"></div>
-                <div class="columns-columns"></div>
+              
+                <div class="columns-columns">
+                  <h2 class="sub_heading">Expense</h2>
+                  <input class="expense_label_text first_expense_label_text" type="text">
+                  <input class="expense_label_text" type="text">
+                  <input class="expense_label_text" type="text">
+                  <input class="expense_label_text" type="text">
+                  <input class="expense_label_text" type="text">
+                  <input class="expense_label_text" type="text">
+                  <input class="expense_label_text" type="text">
+                  <input class="expense_label_text" type="text">
+                  <input class="expense_label_text" type="text">
+                  <input class="expense_label_text" type="text">
+                  <input class="expense_label_text" type="text">
+                  <input class="expense_label_text" type="text">
+                  <input class="expense_label_text" type="text">
+                  <input class="expense_label_text total_value" type="text" value="Total Expenses" ng-readonly="all">
+                </div>
+                <div class="columns-columns">
+                  <h2 class="sub_heading">Expense</h2>
+                  <input class="expense_label_text first_expense_label_text" type="number" value="0">
+                  <input class="expense_label_text" type="number" value="0">
+                  <input class="expense_label_text" type="number" value="0">
+                  <input class="expense_label_text" type="number" value="0">
+                  <input class="expense_label_text" type="number" value="0">
+                  <input class="expense_label_text" type="number" value="0">
+                  <input class="expense_label_text" type="number" value="0">
+                  <input class="expense_label_text" type="number" value="0">
+                  <input class="expense_label_text" type="number" value="0">
+                  <input class="expense_label_text" type="number" value="0">
+                  <input class="expense_label_text" type="number" value="0">
+                  <input class="expense_label_text" type="number" value="0">
+                  <input class="expense_label_text" type="number" value="0">
+                  <input class="expense_label_text total_value" type="number" value="0" ng-readonly="all">
+                </div>
             </div>
+          </div>
+
+          <div class="divider">
+
+          </div>
+
+          <div class="two_by_two">
+            <h2 class="heading">Income</h2>
             <div class="wrapper-columns">
-                <div class="columns-columns"></div>
-                <div class="columns-columns"></div>
+              <div class="columns-columns">
+                <h2 class="sub_heading">Expense</h2>
+                <input class="expense_label_text first_expense_label_text" type="text">
+                <input class="expense_label_text" type="text">
+                <input class="expense_label_text" type="text">
+                <input class="expense_label_text" type="text">
+                <input class="expense_label_text" type="text">
+                <input class="expense_label_text" type="text">
+                <input class="expense_label_text" type="text">
+                <input class="expense_label_text" type="text">
+                <input class="expense_label_text" type="text">
+                <input class="expense_label_text" type="text">
+                <input class="expense_label_text" type="text">
+                <input class="expense_label_text" type="text">
+                <input class="expense_label_text" type="text">
+                <input class="expense_label_text total_value" type="text" value="Total Income" ng-readonly="all">
+              </div>
+              <div class="columns-columns">
+                <h2 class="sub_heading">Expense</h2>
+                <input class="expense_label_text first_expense_label_text" type="number" value="0">
+                <input class="expense_label_text" type="number" value="0">
+                <input class="expense_label_text" type="number" value="0">
+                <input class="expense_label_text" type="number" value="0">
+                <input class="expense_label_text" type="number" value="0">
+                <input class="expense_label_text" type="number" value="0">
+                <input class="expense_label_text" type="number" value="0">
+                <input class="expense_label_text" type="number" value="0">
+                <input class="expense_label_text" type="number" value="0">
+                <input class="expense_label_text" type="number" value="0">
+                <input class="expense_label_text" type="number" value="0">
+                <input class="expense_label_text" type="number" value="0">
+                <input class="expense_label_text" type="number" value="0">
+                <input class="expense_label_text total_value" type="number" value="0" ng-readonly="all">
+                </div>
             </div>
+          </div>
+            
+            
         </div>
       </div>
     </div>

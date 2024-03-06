@@ -6,12 +6,10 @@
 }
 
 body {
-    height: 100vh;
-    width: auto;
+    height: 100%;
 }
 
 .container {
-    height: 100vh;
     background-color:rgb(98, 0, 255);
     display: flex;
     justify-content: center;
@@ -19,7 +17,6 @@ body {
 }
 
 .wrapper {
-    height: 90vh;
     width: 90vw;
     padding: 1rem;
     background-color:white;
@@ -27,11 +24,12 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-block: 5rem;
     box-shadow: rgba(0, 0, 0, 0.7) 0px 0px 50px;
 }
 
 .wrapper h1 {
-    color:white;
+    color:rgb(98, 0, 255);
     text-transform: uppercase;
 }
 
@@ -40,55 +38,178 @@ hr {
     width: 75%;
 }
 
-.heading-wrapper {
-    height: 5%;
-    width: 90%;
-    margin-block: 1rem;
-}
-
 .heading {
-    height: 100%;
     width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 1rem;
-    
-}
-
-.heading h2 {
-    width: 50%;
-    height: 100%;
     color: white;
     text-align: center;
     text-transform: uppercase;
     background-color: rgb(98, 0, 255);
-    border-radius: 50px;
     line-height: 40px;
+    margin: 0 0 1rem 0;
 }
 
 .wrapper-content {
-    background-color: aqua;
-    height: 60%;
+
     width: 90%;
     display: flex;
     justify-content: center;
     gap: 1rem;
 }
 
+.two_by_two {
+    width: 50%;
+    margin: 1rem 1rem;
+}
+
 .wrapper-columns {
-    background-color: rgb(255, 145, 0);
-    height: 100%;
-    width: 90%;
+    width: 100%;
     display: flex;
     justify-content: center;
-    gap: 0.5rem;
+
 }
 
 .columns-columns {
-    background-color: rgb(72, 255, 0);
     height: 100%;
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
+
+.expense_label_text {
+    width: 90%;
+    margin-bottom: 0.5rem;
+    border: 3px solid rgb(98, 0, 255);
+    border-radius: 6px;
+    height: 2rem;
+    text-align: end;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 0.5rem;
+}
+
+
+.first_expense_label_text {
+    margin-top: 0.5rem;
+}
+
+.total_exp_inc_wrapper {
+    width: 90%;
+    display: flex;
+    margin: 1rem 0;
+}
+
+.total_wrapper {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.total_heading {
+    width: 40%;
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: rgb(98, 0, 255);
+    margin: 0 1rem 0 0 ;
+    padding: 0.5rem;
+}
+
+.total_value_display {
+    width: 40%;
+    height: 100%;
+    font-size: 2rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+.total_value {
+    font-size: 1rem;
+    font-weight: 600;
+    text-align: center;
+    color: white;
+    background-color: rgb(128, 49, 255)
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+    .total_exp_inc_wrapper {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        margin: 1rem 0 0 0;
+    }
+
+    .total_wrapper {
+        width: 100%;
+        margin: 0 0 1rem 0;
+    }
+
+    .total_heading {
+        font-size: 1rem;
+    }
+    .wrapper-content {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 1rem 0;
+    }
+
+    .two_by_two {
+        width: 95%;
+    }
+
+    .columns-columns {
+        height: 50%;
+        width: 100%;
+    }
+    
+    .divider {
+        border: 2px solid rgb(98, 0, 255);
+        width: 95%;
+    }
+}
+
+@media (max-width: 425px) {
+    .total_value {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 360px) {
+    .wrapper h1 {
+        font-size: 1.5rem;
+    }
+}
+
 
 
