@@ -11,26 +11,33 @@ body {
 
 .container {
     background-color:rgb(98, 0, 255);
+    background: #7F00FF;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #E100FF, #7F00FF);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #E100FF, #7F00FF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .wrapper {
-    width: 90vw;
+    width: 93vw;
     padding: 1rem;
-    background-color:white;
+    background-color:rgb(36, 36, 36);
     border-radius: 1rem;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-block: 5rem;
+    margin: 2rem 0;
     box-shadow: rgba(0, 0, 0, 0.7) 0px 0px 50px;
 }
 
 .wrapper h1 {
-    color:rgb(98, 0, 255);
+    color: transparent;
     text-transform: uppercase;
+    background: #7F00FF;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #E100FF, #7F00FF);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #E100FF, #7F00FF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-clip: text;
 }
 
 hr {
@@ -39,17 +46,29 @@ hr {
 }
 
 .heading {
-    width: 100%;
+    width: 80%;
     color: white;
+    color: rgb(0, 0, 0);
     text-align: center;
     text-transform: uppercase;
     background-color: rgb(98, 0, 255);
+    background: #7F00FF;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #E100FF, #7F00FF);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #E100FF, #7F00FF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     line-height: 40px;
     margin: 0 0 1rem 0;
 }
 
-.wrapper-content {
+.sub_heading {
+    color: transparent;
+    text-transform: uppercase;
+    background: #7F00FF;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #E100FF, #7F00FF);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #E100FF, #7F00FF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-clip: text;
+}
 
+.wrapper-content {
     width: 90%;
     display: flex;
     justify-content: center;
@@ -87,6 +106,8 @@ hr {
     font-size: 1rem;
     font-weight: 600;
     padding: 0.5rem;
+    background-color:rgb(36, 36, 36);
+    color: white;
 }
 
 
@@ -110,9 +131,13 @@ hr {
 .total_heading {
     width: 40%;
     color: white;
+    color: rgb(0, 0, 0);
     text-align: center;
     text-transform: uppercase;
     background-color: rgb(98, 0, 255);
+    background: #7F00FF;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #E100FF, #7F00FF);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #E100FF, #7F00FF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     margin: 0 1rem 0 0 ;
     padding: 0.5rem;
 }
@@ -123,6 +148,10 @@ hr {
     font-size: 2rem;
     font-weight: 600;
     text-align: center;
+    border: 3px solid rgb(98, 0, 255);
+    border-radius: 6px;
+    background-color:rgb(36, 36, 36);
+    color: white;
 }
 
 .total_value {
@@ -130,7 +159,10 @@ hr {
     font-weight: 600;
     text-align: center;
     color: white;
-    background-color: rgb(128, 49, 255)
+    background-color: rgb(128, 49, 255);
+    background: #7F00FF;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #E100FF, #7F00FF);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #E100FF, #7F00FF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 
@@ -181,7 +213,6 @@ hr {
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        margin: 1rem 0;
     }
 
     .two_by_two {
@@ -199,9 +230,17 @@ hr {
     }
 }
 
-@media (max-width: 425px) {
+@media (max-width: 426px) {
     .total_value {
         font-size: 12px;
+    }
+
+    .total_value_display {
+        font-size: 1.5rem;
+    }
+
+    .sub_heading {
+        font-size: 1rem;
     }
 }
 
