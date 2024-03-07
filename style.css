@@ -22,7 +22,7 @@ body {
 .wrapper {
     width: 93vw;
     padding: 1rem;
-    background-color:rgb(36, 36, 36);
+    background-color:rgb(0, 0, 0);
     border-radius: 1rem;
     display: flex;
     flex-direction: column;
@@ -46,7 +46,7 @@ hr {
 }
 
 .heading {
-    width: 80%;
+    width: 100%;
     color: white;
     color: rgb(0, 0, 0);
     text-align: center;
@@ -78,6 +78,9 @@ hr {
 .two_by_two {
     width: 50%;
     margin: 1rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .wrapper-columns {
@@ -106,7 +109,7 @@ hr {
     font-size: 1rem;
     font-weight: 600;
     padding: 0.5rem;
-    background-color:rgb(36, 36, 36);
+    background-color:rgb(20, 20, 20);
     color: white;
 }
 
@@ -118,6 +121,7 @@ hr {
 .total_exp_inc_wrapper {
     width: 90%;
     display: flex;
+    justify-content: center;
     margin: 1rem 0;
 }
 
@@ -150,7 +154,7 @@ hr {
     text-align: center;
     border: 3px solid rgb(98, 0, 255);
     border-radius: 6px;
-    background-color:rgb(36, 36, 36);
+    background-color:rgb(20, 20, 20);
     color: white;
 }
 
@@ -159,6 +163,7 @@ hr {
     font-weight: 600;
     text-align: center;
     color: white;
+    border: none;
     background-color: rgb(128, 49, 255);
     background: #7F00FF;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #E100FF, #7F00FF);  /* Chrome 10-25, Safari 5.1-6 */
