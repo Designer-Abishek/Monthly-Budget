@@ -21,7 +21,7 @@
   </head>
 
   <body>
-    <div ng-app="" ng-init="all='false'" class="container">
+    <div ng-app="myApp" ng-controller="myCtrl" ng-init="all ='false'" class="container">
       <div class="wrapper">
         <h1>Monthly Budget</h1>
         <hr>
@@ -52,31 +52,31 @@
                   <input class="expense_label_text" type="text">
                   <input class="expense_label_text" type="text">
                   <input class="expense_label_text" type="text">
-                  <input class="expense_label_text" type="text">
-                  <input class="expense_label_text" type="text">
-                  <input class="expense_label_text" type="text">
-                  <input class="expense_label_text" type="text">
-                  <input class="expense_label_text" type="text">
-                  <input class="expense_label_text" type="text">
-                  <input class="expense_label_text" type="text">
+                    <input class="expense_label_text" type="text">
+                    <input class="expense_label_text" type="text">
+                    <input class="expense_label_text" type="text">
+                    <input class="expense_label_text" type="text">
+                    <input class="expense_label_text" type="text">
+                    <input class="expense_label_text" type="text">
+                    <input class="expense_label_text" type="text">
                   <input class="expense_label_text total_value" type="text" value="Total Expenses" ng-readonly="all">
                 </div>
                 <div class="columns-columns">
                   <h2 class="sub_heading">Amount in ₹</h2>
-                  <input class="expense_label_text first_expense_label_text" type="number" value="0">
-                  <input class="expense_label_text" type="number" value="0">
-                  <input class="expense_label_text" type="number" value="0">
-                  <input class="expense_label_text" type="number" value="0">
-                  <input class="expense_label_text" type="number" value="0">
-                  <input class="expense_label_text" type="number" value="0">
-                  <input class="expense_label_text" type="number" value="0">
-                  <input class="expense_label_text" type="number" value="0">
-                  <input class="expense_label_text" type="number" value="0">
-                  <input class="expense_label_text" type="number" value="0">
-                  <input class="expense_label_text" type="number" value="0">
-                  <input class="expense_label_text" type="number" value="0">
-                  <input class="expense_label_text" type="number" value="0">
-                  <input class="expense_label_text total_value" type="number" value="0" ng-readonly="all">
+                  <input class="expense_label_text expense_value first_expense_label_text" type="number" value="10">
+                  <input class="expense_label_text expense_value" type="number" value="20">
+                  <input class="expense_label_text expense_value" type="number" value="30">
+                  <input class="expense_label_text expense_value" type="number" value="0">
+                  <input class="expense_label_text expense_value" type="number" value="0">
+                  <input class="expense_label_text expense_value" type="number" value="0">
+                  <input class="expense_label_text expense_value" type="number" value="0">
+                  <input class="expense_label_text expense_value" type="number" value="0">
+                  <input class="expense_label_text expense_value" type="number" value="0">
+                  <input class="expense_label_text expense_value" type="number" value="0">
+                  <input class="expense_label_text expense_value" type="number" value="0">
+                  <input class="expense_label_text expense_value" type="number" value="0">
+                  <input class="expense_label_text expense_value" type="number" value="0">
+                  <input class="expense_label_text expense_total_value total_value" type="number" value="0" ng-readonly="all" ng-model="expense_total_value" >
                 </div>
             </div>
           </div>
@@ -107,25 +107,24 @@
               </div>
               <div class="columns-columns">
                 <h2 class="sub_heading">Amount in ₹</h2>
-                <input class="expense_label_text first_expense_label_text" type="number" value="0">
-                <input class="expense_label_text" type="number" value="0">
-                <input class="expense_label_text" type="number" value="0">
-                <input class="expense_label_text" type="number" value="0">
-                <input class="expense_label_text" type="number" value="0">
-                <input class="expense_label_text" type="number" value="0">
-                <input class="expense_label_text" type="number" value="0">
-                <input class="expense_label_text" type="number" value="0">
-                <input class="expense_label_text" type="number" value="0">
-                <input class="expense_label_text" type="number" value="0">
-                <input class="expense_label_text" type="number" value="0">
-                <input class="expense_label_text" type="number" value="0">
-                <input class="expense_label_text" type="number" value="0">
-                <input class="expense_label_text total_value" type="number" value="0" ng-readonly="all">
+                <input class="expense_label_text income_value first_expense_label_text" type="number" value="0">
+                <input class="expense_label_text income_value" type="number" value="0">
+                <input class="expense_label_text income_value" type="number" value="0">
+                <input class="expense_label_text income_value" type="number" value="0">
+                <input class="expense_label_text income_value" type="number" value="0">
+                <input class="expense_label_text income_value" type="number" value="0">
+                <input class="expense_label_text income_value" type="number" value="0">
+                <input class="expense_label_text income_value" type="number" value="0">
+                <input class="expense_label_text income_value" type="number" value="0">
+                <input class="expense_label_text income_value" type="number" value="0">
+                <input class="expense_label_text income_value" type="number" value="0">
+                <input class="expense_label_text income_value" type="number" value="0">
+                <input class="expense_label_text income_value" type="number" value="0">
+                <input class="expense_label_text income_total_value total_value" type="number" value="0" ng-readonly="all">
                 </div>
             </div>
           </div>
-            
-            
+
         </div>
       </div>
     </div>
@@ -135,5 +134,7 @@
         <input ng-model="color" type="text" name="" id="" placeholder="Write your favourite color">
         <p style="background-color: {{color}};">{{name > 18 ? "You are eligible" : "You are not eligible"}}</p>
     </div> -->
+
+      <script src="./script.js"></script>
   </body>
 </html>
